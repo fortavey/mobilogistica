@@ -1,0 +1,116 @@
+.main-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 25px;
+  @media screen and (min-width: 800px) {
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+  &-top {
+    position: relative;
+    @media screen and (min-width: 800px) {
+      position: static;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      max-width: 233px;
+      padding-left: 9px;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      line-height: 32px;
+      @media screen and (min-width: 500px) {
+        max-width: 310px;
+      }
+      @media screen and (min-width: 1000px) {
+        font-size: 48px;
+        line-height: 64px;
+        max-width: 682px;
+        padding-bottom: 22px;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: -50px;
+      @media screen and (min-width: 400px) {
+        right: 0;
+      }
+      @media screen and (min-width: 800px) {
+        right: -215px;
+        z-index: 2;
+        width: 625px;
+      }
+      @media screen and (min-width: 1150px) {
+        right: -300px;
+        width: auto;
+      }
+      @media screen and (min-width: 1250px) {
+        right: -250px;
+      }
+      @media screen and (min-width: 1350px) {
+        right: auto;
+        left: calc(50% + 55px);
+      }
+      @media screen and (min-width: 1800px) {
+        left: calc(50% + 110px);
+      }
+    }
+  }
+  &-bottom {
+    background-color: $yellow;
+    position: relative;
+    padding-bottom: 40px;
+    @media screen and (min-width: 800px) {
+      padding-bottom: 28px;
+    }
+    &--white-text {
+      font-size: 24px;
+      color: #fff;
+      padding-left: 9px;
+      margin-bottom: 6px;
+      font-weight: 600;
+      line-height: 30px;
+      max-width: 306px;
+      @media screen and (min-width: 1000px) {
+        font-size: 48px;
+        line-height: 50px;
+        max-width: 605px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+    }
+    &--black-text {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 20px;
+      @media screen and (min-width: 800px) {
+        text-align: left;
+        padding-left: 10px;
+        max-width: 410px;
+      }
+      @media screen and (min-width: 1000px) {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 575px;
+      }
+    }
+    .btn {
+      width: 280px;
+      height: 52px;
+      position: absolute;
+      bottom: -25px;
+      left: calc(50% - 140px);
+      @media screen and (min-width: 800px) {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

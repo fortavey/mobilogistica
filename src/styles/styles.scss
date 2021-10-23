@@ -1,9 +1,27 @@
 @import './const/normalize.scss';
-@import './font_styles/roboto.scss';
+@import './font_styles/opensans.scss';
+@import './const/variables.scss';
+@import './components/topHeader.scss';
+@import './components/mainSlider.scss';
+@import './components/workedWithUs.scss';
 
 body {
-  background-color: red;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.wrapper {
+  margin: auto;
+  width: 100%;
+  @media screen and (min-width: 800px) {
+    max-width: 1184px;
+  }
+}
+.btn {
   display: flex;
-  background: linear-gradient(to top, black, white);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: $red;
+  border-radius: 2px;
 }

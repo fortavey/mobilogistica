@@ -1,0 +1,39 @@
+.worked-with-us {
+  padding-top: 50px;
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+  &__item {
+    &-text {
+    }
+    &-image {
+    }
+    &-title {
+      background-color: $yellow;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 12px;
+      width: 300px;
+    }
+    &-block {
+      display: flex;
+      padding-top: 7px;
+      &-item {
+        width: 50%;
+        .top {
+          text-align: center;
+        }
+        .arrow {
+          text-align: center;
+          padding: 17px 0;
+        }
+        .bottom {
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
