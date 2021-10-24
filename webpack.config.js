@@ -44,6 +44,10 @@ const conf = {
         test: /\.(ttf|woff|woff2|eot)$/,
         use: ['file-loader'],
       },
+      {
+        test: /\.(png|jpg)$/,
+        use: ['file-loader'],
+      },
     ],
   },
   plugins: [
