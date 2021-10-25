@@ -75,12 +75,14 @@ module.exports = (env, options) => {
 
   conf.devtool = isProd ? false : 'eval-cheap-module-source-map'
 
-  const vueDev = './src/js/lib/vueDev.js'
-  const vueProd = './src/js/lib/vueProd.js'
-
   conf.entry = {
-    vue: isProd ? vueProd : vueDev,
     main: './src/main.js',
+  }
+
+  conf.resolve.alias = {
+    '@vue': isProd
+      ? path.resolve(__dirname, 'src/js/lib/prod')
+      : path.resolve(__dirname, 'src/js/lib/dev'),
   }
 
   return conf

@@ -210,7 +210,7 @@
             <div class="item">
                 <img src="./img/trust-icon3-mobile.png" alt="icon">
                 <div class="text">
-                    Берем на себя оформление всех документов: сертификаций груза, лицензий на реализацию, разрешений на ввоз/вывоз и деклараций для таможни
+                    Берем на себя оформление всех документов: сертификаций груза, деклараций соответствия, разрешений на ввоз/вывоз и деклараций для таможни
                 </div>
             </div>
             <div class="item">
@@ -266,7 +266,7 @@
                     <div class="item">
                         <img src="./img/trust-icon3-pc.png" alt="icon">
                         <div class="text">
-                            Берем на себя оформление всех документов: сертификаций груза, лицензий на реализацию, разрешений на ввоз/вывоз и деклараций для таможни
+                            Берем на себя оформление всех документов: сертификаций груза, деклараций соответствия, разрешений на ввоз/вывоз и деклараций для таможни
                         </div>
                     </div>
                 </div>
@@ -355,6 +355,486 @@
                         </picture>
                         <div class="item-text">
                             Четкие сроки доставки: машины из Италии отправляются 2 раза в неделю
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="facts">
+        <div class="wrapper">
+            <div class="title">Факты о Mobililogistica</div>
+            <div class="container">
+                <div class="item">
+                    <span>15 лет</span> доставляем грузы из Европы и США в Россию
+                </div>
+                <div class="item">
+                    <span>90% клиентов</span> стали постоянными
+                </div>
+                <div class="item">
+                    <span>1 720 000 кг </span> груза перевозим каждый год
+                </div>
+                <div class="item">
+                    <span>12 лет</span> работают с нами постоянные клиенты
+                </div>
+                <div class="item last">
+                    <span>1 500 клиентов</span> благодаря нам получили свой груз вовремя   
+                </div>
+                <div class="image">
+                    <picture>
+                        <source srcset="./img/fakt-pc.png" media="(min-width: 800px)">
+                        <img src="./img/fakt-mobile.png" alt="truck">
+                    </picture>
+                </div>
+                <div class="bottom-text">
+                    Мы перевозим только коммерческий груз, 
+                    который забираем с фабрик вместе с документами на него. 
+                    Посылки от родственников и личные вещи при переезде мы не доставляем. 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tarifs">
+        <div class="wrapper">
+            <div class="top">
+                <div class="title">Тарифы</div>
+                <div class="controls">
+                    <div class="numbers">
+                        <span :class="showFirst ? 'active' : ''" @click="showFirstClick">01</span>
+                        <span class="delimiter">/</span>
+                        <span :class="showSecond ? 'active' : ''" @click="showSecondClick">02</span>
+                    </div>
+                    <div class="rings">
+                        <div class="ring" :class="showFirst ? 'active' : ''" @click="showFirstClick"></div>
+                        <div class="ring" :class="showSecond ? 'active' : ''" @click="showSecondClick"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="item" v-if="showFirst">Все под контролем</div>
+                    <div class="item" v-if="showFirst">Все схвачено</div>
+                    <div class="item" v-if="showSecond">Из рук в ваши руки</div>
+                    <div class="item" v-if="showSecond">Полный ВЭД</div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="container">
+                    <div class="item" v-if="showFirst">
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            Производитель сам доставляет груз к нам на склад в Европе. 
+                        </div>
+                        <div class="item-sub">
+                            Мы проверяем его на целостность и полноту, группируем, загружаем. 
+                        </div>
+                        <div class="item-sub">
+                            Растамаживаем и доставляем на склад в Москве.  
+                        </div>
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>  
+                        </div>
+                        <div class="item-sub">
+                            Груз застрахован до нашего склада в Москве.  
+                        </div>
+                    </div>
+                    <div class="item" v-if="showFirst">
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            Мы забираем груз из любой точки Европы или США.
+                        </div>
+                        <div class="item-sub">
+                            Мы проверяем его на целостность и полноту, группируем, загружаем.
+                        </div>
+                        <div class="item-sub">
+                            Растамаживаем и доставляем на склад в Москве. 
+                        </div>
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            Груз застрахован до нашего склада в Москве.
+                        </div>
+                    </div>
+                    <div class="item" v-if="showSecond">
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            Мы забираем груз из любой точки Европы или США.
+                        </div>
+                        <div class="item-sub">
+                            Проводим трехуровневую проверку целостности на всем пути.
+                        </div>
+                        <div class="item-sub">
+                            Растамаживаем и доставляем груз к вам домой в любой город России. 
+                        </div>
+                        <div class="item-sub">
+                            Заносим, распаковываем, устанавливаем, забираем с собой мусор. 
+                        </div>
+                        <div class="item-sub">
+                            Груз застрахован до вашего дома.  
+                        </div>
+                    </div>
+                    <div class="item" v-if="showSecond">
+                        <div class="item-sub">
+                            Мы переводим оплату европейскому производителю. 
+                        </div>
+                        <div class="item-sub">
+                            Получаем и выдаем вам все закрывающие налоговые и бухгалтерские документы. 
+                        </div>
+                        <div class="item-sub">
+                            Мы забираем груз из любой точки Европы и США.
+                        </div>
+                        <div class="item-sub">
+                            Мы проверяем его на целостность и полноту, группируем, загружаем.
+                        </div>
+                        <div class="item-sub">
+                            Растамаживаем и доставляем на склад в Москве. 
+                        </div>
+                        <div class="item-sub">
+                            <div class="yellow-line"></div>
+                        </div>
+                        <div class="item-sub">
+                            Груз застрахован до нашего склада в Москве.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">Оставить заявку на расчет</div>
+    </div>
+    <div class="how-we-work how-we-work-pc">
+        <div class="top">
+            <div class="wrapper">
+                <div class="title">Как мы работаем</div>
+                <div class="text">
+                    <div class="white-dots" style="background-image: url('./img/white-dots.png')"></div>
+                    <div class="white">У нас все прозрачно:</div>
+                    <div class="black">
+                        вы всегда будете знать, где и на какой стадии находится ваш груз. 
+                        Порядок работы немного отличается в зависимости от тарифа. 
+                        Кликайте на выбранный и узнаете, как все проходит.
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="item" :class="active === 1 ? 'active' : ''" @click="changeActive(1)">Все под контролем</div>
+                    <div class="item" :class="active === 2 ? 'active' : ''" @click="changeActive(2)">Все схвачено</div>
+                    <div class="item" :class="active === 3 ? 'active' : ''" @click="changeActive(3)">Из рук в ваши руки</div>
+                    <div class="item" :class="active === 4 ? 'active' : ''" @click="changeActive(4)">Полный ВЭД</div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="wrapper">
+                <div class="container" v-if="active === 1">
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">1</div>
+                        <div class="text">
+                            Вы оставляете заявку на сайте, мы связываемся с вами и бесплатно консультируем.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">2</div>
+                        <div class="text">
+                            Оформляем заявку, утверждаем финальную стоимость и сроки доставки.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">3</div>
+                        <div class="text">
+                            Вы оформляете покупку товара у производителя и доставку груза к нам на склад в Италии. 
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">4</div>
+                        <div class="text">
+                            Мы получаем груз, проверяем его целостность и полноту. <br>
+                            <br>
+                            Вы получаете уведомление о том, что груз у нас.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">5</div>
+                        <div class="text">
+                            Грузим товар в машину и выезжаем из Италии.
+                            <br><br>
+                            Вы получаете уведомление об отправке.
+                        </div>
+                    </div>
+                    <div class="item double">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">6</div>
+                        <div class="text">
+                            Проходим таможенный контроль: 
+                            собираем декларации, сертификации и разрешение на ввоз/вывоз продукции; заполняем декларации; оплачиваем пошлины и сборы. 
+                            <br><br>
+                            Вы получаете уведомление об успешном прохождении таможни.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">7</div>
+                        <div class="text">
+                            Машина приезжает 
+                            на склад в Москву.
+                            <br><br>
+                            Вы получаете уведомление о прибытии.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">8</div>
+                        <div class="text">
+                            Разгружаем машину и храним ваш груз на складе 10 дней бесплатно.
+                        </div>
+                    </div>
+                    <div class="item last">
+                        <div class="text">
+                            Вы забираете груз и оплачиваете доставку.
+                        </div>
+                    </div>
+                </div>
+                <div class="container" v-if="active === 2">
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">1</div>
+                        <div class="text">
+                            Вы оставляете заявку на сайте, мы связываемся с вами и бесплатно консультируем.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">2</div>
+                        <div class="text">
+                            Оформляем заявку, утверждаем финальную стоимость и сроки доставки.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">3</div>
+                        <div class="text">
+                            Вы оформляете покупку товара у производителя.  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">4</div>
+                        <div class="text">
+                            Мы забираем его с фабрики, проверяем целостность и полноту, везем на склад в Италии.
+                            <br><br>
+                            Вы получаете уведомление о том, что груз у нас.
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">5</div>
+                        <div class="text">
+                            На складе мы группируем груз, загружаем его в машину и выезжаем из Италии.
+                            <br><br>
+                            Вы получаете уведомление об отправке.
+                        </div>
+                    </div>
+                    <div class="item double">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">6</div>
+                        <div class="text">
+                            Проходим таможенный контроль: 
+                            собираем декларации, сертификации и разрешение на ввоз/вывоз продукции; заполняем декларации; оплачиваем пошлины и сборы. 
+                            <br><br>
+                            Вы получаете уведомление об успешном прохождении таможни.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">7</div>
+                        <div class="text">
+                            Машина приезжает 
+                            на склад в Москву.
+                            <br><br>
+                            Вы получаете уведомление о прибытии.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">8</div>
+                        <div class="text">
+                            Разгружаем машину и храним ваш груз на складе 10 дней бесплатно.
+                        </div>
+                    </div>
+                    <div class="item last">
+                        <div class="text">
+                            Вы забираете груз и оплачиваете доставку.
+                        </div>
+                    </div>
+                </div>
+                <div class="container" v-if="active === 3">
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">1</div>
+                        <div class="text">
+                            Вы оставляете заявку на сайте, мы связываемся с вами и бесплатно консультируем.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">2</div>
+                        <div class="text">
+                            Оформляем заявку, утверждаем финальную стоимость и сроки доставки.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">3</div>
+                        <div class="text">
+                            Вы оформляете покупку товара у производителя.  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">4</div>
+                        <div class="text">
+                            Мы забираем его с фабрики, проверяем целостность и полноту, везем на склад в Италии.
+                            <br><br>
+                            Вы получаете уведомление о том, что груз у нас.
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">5</div>
+                        <div class="text">
+                            На складе мы группируем груз, снова убеждаемся в его целостности, загружаем в машину и выезжаем из Италии.
+                            <br><br>
+                            Вы получаете уведомление об отправке.
+                        </div>
+                    </div>
+                    <div class="item double">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">6</div>
+                        <div class="text">
+                            Проходим таможенный контроль: 
+                            собираем декларации, сертификации и разрешение на ввоз/вывоз продукции; заполняем декларации; оплачиваем пошлины и сборы. 
+                            <br><br>
+                            Вы получаете уведомление об успешном прохождении таможни.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">7</div>
+                        <div class="text">
+                            Машина приезжает 
+                            на склад в Москву.
+                            <br><br>
+                            Вы получаете уведомление о прибытии.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">8</div>
+                        <div class="text">
+                            Отправляем груз по вашему адресу.
+                            <br><br>
+                            Вы получаете уведомление об отправлении.
+
+                        </div>
+                    </div>
+                    <div class="item last">
+                        <div class="text">
+                            Заносим товар, распаковываем, устанавливаем, забираем с собой мусор. 
+                        </div>
+                    </div>
+                </div>
+                <div class="container" v-if="active === 4">
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">1</div>
+                        <div class="text">
+                            Вы оставляете заявку на сайте, мы связываемся с вами и бесплатно консультируем.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">2</div>
+                        <div class="text">
+                            Оформляем заявку, утверждаем финальную стоимость и сроки доставки.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">3</div>
+                        <div class="text">
+                            Мы переводим оплату европейскому производителю, оформляем закрывающие документы.  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">4</div>
+                        <div class="text">
+                            Мы забираем его с фабрики, проверяем целостность и полноту, везем на склад в Италии.
+                            <br><br>
+                            Вы получаете уведомление о том, что груз у нас.
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">5</div>
+                        <div class="text">
+                            На складе мы группируем груз, загружаем его в машину и выезжаем из Италии.
+                            <br><br>
+                            Вы получаете уведомление об отправке.
+                        </div>
+                    </div>
+                    <div class="item double">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">6</div>
+                        <div class="text">
+                            Проходим таможенный контроль: 
+                            собираем декларации, сертификации и разрешение на ввоз/вывоз продукции; заполняем декларации; оплачиваем пошлины и сборы. 
+                            <br><br>
+                            Вы получаете уведомление об успешном прохождении таможни.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">7</div>
+                        <div class="text">
+                            Машина приезжает 
+                            на склад в Москву.
+                            <br><br>
+                            Вы получаете уведомление о прибытии.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="how-arrow"><img src="./img/how-arrow.svg" alt="arrow"></div>
+                        <div class="number">8</div>
+                        <div class="text">
+                            Разгружаем машину и храним ваш груз на складе 10 дней бесплатно.
+                        </div>
+                    </div>
+                    <div class="item last">
+                        <div class="text">
+                            Вы забираете груз, получаете закрывающие документы ТНТ и УПД на оплаченную сумму и оплачиваете доставку. 
                         </div>
                     </div>
                 </div>

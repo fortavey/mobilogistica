@@ -1,0 +1,122 @@
+.tarifs {
+  position: relative;
+  @media screen and (min-width: 800px) {
+    margin-top: 40px;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    .item {
+      width: calc(50% - 20px);
+      box-sizing: border-box;
+      margin: 0 10px;
+    }
+  }
+  .top {
+    background-color: $yellow;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-size: 28px;
+      color: #312e2a;
+      font-weight: 600;
+      padding-left: 30px;
+    }
+    .controls {
+      padding-right: 10px;
+      @media screen and (min-width: 800px) {
+        display: none;
+      }
+      .numbers {
+        span {
+          color: #ffa600;
+          font-size: 34px;
+          font-weight: 700;
+          cursor: pointer;
+          &.active {
+            color: #fff;
+            font-size: 48px;
+          }
+          &.delimiter {
+            font-size: 48px;
+            color: #fff;
+          }
+        }
+      }
+      .rings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ring {
+          width: 10px;
+          height: 10px;
+          border-radius: 6px;
+          border: 2px solid #ffa600;
+          margin: 4px;
+          &.active {
+            border: 3px solid #ffffff;
+          }
+        }
+      }
+    }
+    .container {
+      padding-top: 17px;
+    }
+    .item {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      text-align: center;
+      @media screen and (min-width: 800px) {
+        font-size: 24px;
+      }
+    }
+  }
+  .main {
+    .item {
+      &-sub {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid $yellow;
+        font-weight: 600;
+        min-height: 100px;
+        line-height: 18px;
+        @media screen and (min-width: 800px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .yellow-line {
+    width: 41px;
+    height: 4px;
+    background-color: $yellow;
+  }
+  .btn {
+    width: 300px;
+    height: 52px;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 149px);
+    @media screen and (min-width: 800px) {
+      width: 380px;
+      height: 52px;
+      margin: auto;
+      position: relative;
+      bottom: auto;
+      left: auto;
+      margin-top: 40px;
+    }
+  }
+  padding-bottom: 40px;
+}
