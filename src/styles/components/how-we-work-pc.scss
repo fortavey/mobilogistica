@@ -1,4 +1,8 @@
 .how-we-work-pc {
+  display: none;
+  @media screen and (min-width: 1000px) {
+    display: block;
+  }
   .top {
     background-color: $yellow;
     padding-top: 46px;
@@ -44,6 +48,7 @@
         color: #312e2a;
         font-size: 24px;
         font-weight: 600;
+        cursor: pointer;
         &.active {
           background-color: #fff;
         }
@@ -97,5 +102,11 @@
       left: 100%;
       top: 50%;
     }
+  }
+  .btn {
+    width: 380px;
+    height: 52px;
+    margin: auto;
+    margin-bottom: 100px;
   }
 }

@@ -1,0 +1,59 @@
+.yellow-big-line {
+  @media screen and (min-width: 1100px) {
+    width: 180px;
+    height: 10px;
+    background-color: $yellow;
+    margin: 30px 0 100px;
+  }
+}
+.trust-us {
+  margin-top: 50px;
+  overflow: hidden;
+  .title {
+    .text {
+      font-size: 28px;
+      font-weight: 600;
+      padding: 27px 13px 37px 13px;
+      background-color: $yellow;
+      position: relative;
+      @media screen and (min-width: 1185px) {
+        font-size: 48px;
+        width: 580px;
+        margin-left: auto;
+        padding: 47px 100px;
+      }
+    }
+    @media screen and (min-width: 1185px) {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 55%,
+        rgba(255, 210, 55, 1) 55%,
+        rgba(255, 210, 55, 1) 100%
+      );
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    img {
+      max-width: 30%;
+      @media screen and (min-width: 1185px) {
+        max-width: 25%;
+        margin: 5px;
+      }
+    }
+  }
+  .dots {
+    position: absolute;
+    height: 145px;
+    width: 1000px;
+    right: 100%;
+    top: 0;
+    background-repeat: repeat-x;
+  }
+}

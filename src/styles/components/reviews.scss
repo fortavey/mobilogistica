@@ -1,0 +1,109 @@
+.reviews {
+  background-color: $yellow;
+  position: relative;
+  @media screen and (min-width: 1100px) {
+    background: rgb(255, 210, 55);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 210, 55, 1) 0%,
+      rgba(255, 210, 55, 1) 50%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .wrapper {
+    background: rgb(255, 210, 55);
+  }
+  .title {
+    background-color: #fff;
+    padding-top: 54px;
+    padding-bottom: 37px;
+    padding-left: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    @media screen and (min-width: 1100px) {
+      font-size: 48px;
+      background-color: transparent;
+    }
+    &-sub {
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff;
+      padding: 19px 12px;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    .rev-arr {
+      position: absolute;
+      top: 80px;
+      left: 10px;
+      z-index: 5;
+      &.right {
+        transform: rotate(180deg);
+        left: auto;
+        right: 10px;
+      }
+    }
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    width: 181px;
+    height: 209px;
+    background-position: center center;
+    background-size: cover;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+    }
+  }
+  .name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .text {
+    background-color: #fff;
+    margin: 0 10px;
+    line-height: 20px;
+    text-align: center;
+    padding: 15px 10px 5px;
+    z-index: 1;
+    border: 2px solid $yellow;
+    box-sizing: border-box;
+    &-in {
+      overflow: hidden;
+      max-height: 160px;
+      transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+      &.opened {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+      }
+    }
+    .show-more {
+      font-size: 20px;
+      font-weight: 600;
+      color: $yellow;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+  .bottom-line {
+    height: 67px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 0;
+  }
+}

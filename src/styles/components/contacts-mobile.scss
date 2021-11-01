@@ -1,0 +1,65 @@
+.contacts-mobile {
+  overflow: hidden;
+  @media screen and (min-width: 1100px) {
+    display: none;
+  }
+  .title {
+    .text {
+      height: 148px;
+      background-color: $yellow;
+      position: relative;
+      font-size: 28px;
+      font-weight: 600;
+      padding-left: 12px;
+      padding-top: 10px;
+      padding-right: 154px;
+      box-sizing: border-box;
+    }
+    .image {
+      width: 154px;
+      height: 178px;
+      position: absolute;
+      top: 14px;
+      right: 0;
+      background-size: cover;
+      img {
+        display: block;
+      }
+      .dots {
+        position: absolute;
+        height: 50px;
+        width: 1000px;
+        right: 100%;
+        top: calc(50% - 25px);
+        background-repeat: repeat-x;
+      }
+    }
+  }
+  .contacts-block {
+    line-height: 20px;
+    padding-top: 16px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    .btn {
+      width: 300px;
+      height: 52px;
+      margin-top: 20px;
+    }
+  }
+  .numbers {
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+    img {
+      position: relative;
+      top: 4px;
+      left: 5px;
+    }
+  }
+  .adress {
+    margin-bottom: 30px;
+  }
+  .license {
+    font-weight: 300;
+  }
+}

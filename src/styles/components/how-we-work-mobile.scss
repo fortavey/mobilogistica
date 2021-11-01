@@ -1,0 +1,107 @@
+.how-we-work-mobile {
+  padding-top: 77px;
+  background-color: $yellow;
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: #312e2a;
+  }
+  .sub-title {
+    padding: 10px;
+  }
+  .white {
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .black {
+    font-size: 18px;
+    line-height: 24px;
+    color: #312e2a;
+  }
+  .block {
+    .header {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      width: calc(100% - 20px);
+      padding-left: 47px;
+      box-sizing: border-box;
+      position: relative;
+      padding-right: 40px;
+      img {
+        position: absolute;
+        right: 5px;
+      }
+      &.active {
+        justify-content: center;
+        margin: 20px 10px 0;
+        background-color: #fff;
+        padding: 0;
+        img {
+          display: none;
+        }
+      }
+    }
+    .container {
+      background-color: #fff;
+      padding-top: 27px;
+      display: none;
+      padding-bottom: 15px;
+      &.active {
+        display: block;
+      }
+    }
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .number {
+      width: 47px;
+      font-size: 48px;
+      font-weight: 700;
+      color: $yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text {
+      width: calc(100% - 47px);
+      line-height: 20px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+    .border {
+      width: 177px;
+      height: 1px;
+      margin-left: 47px;
+      margin-top: 12px;
+      margin-bottom: 25px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: block;
+      }
+    }
+    .last {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      padding-left: 47px;
+    }
+  }
+  .btn {
+    height: 52px;
+  }
+}

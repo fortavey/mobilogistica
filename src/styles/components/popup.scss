@@ -1,0 +1,118 @@
+.popup-window {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  &.active {
+    display: flex;
+  }
+  .popup {
+    background-color: $yellow;
+    padding: 24px 34px 38px;
+    box-sizing: border-box;
+    max-width: 880px;
+    width: 100%;
+    box-sizing: border-box;
+    @media screen and (min-width: 880px) {
+      padding: 42px 50px 36px 100px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-bottom: 20px;
+      @media screen and (min-width: 880px) {
+        font-size: 36px;
+        line-height: 50px;
+        &.subtit {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+    }
+    &-text {
+      font-weight: 600;
+      line-height: 20px;
+      @media screen and (min-width: 880px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+  .next-btn {
+    width: 100%;
+    height: 55px;
+    background: #ffa600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    border: 1px solid #ff2e01;
+    cursor: pointer;
+    margin: 20px auto 15px;
+    @media screen and (min-width: 880px) {
+      font-size: 36px;
+      height: 63px;
+    }
+  }
+  .danger-btn {
+    width: 100%;
+    height: 55px;
+    background: #ff2e01;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    margin: auto;
+    @media screen and (min-width: 880px) {
+      font-size: 24px;
+      height: 63px;
+    }
+  }
+  input {
+    width: 100%;
+    height: 60px;
+    padding-left: 13px;
+    padding-right: 10px;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    outline: none;
+  }
+  .desc {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #312e2a;
+    margin-bottom: 20px;
+    @media screen and (min-width: 880px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .finish-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .err {
+    border: 2px solid red;
+    position: relative;
+  }
+  .err-text {
+    color: red;
+  }
+}
