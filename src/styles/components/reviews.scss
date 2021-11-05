@@ -82,7 +82,7 @@
     box-sizing: border-box;
     &-in {
       overflow: hidden;
-      max-height: 160px;
+      max-height: 140px;
       transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
       &.opened {
         max-height: 1000px;
@@ -96,6 +96,7 @@
       text-align: center;
       padding: 10px;
       box-sizing: border-box;
+      cursor: pointer;
     }
   }
   .bottom-line {
